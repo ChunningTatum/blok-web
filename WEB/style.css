@@ -1,1 +1,21 @@
+body{
+	margin-left: 2em;
+	font-family: 'Source Sans Pro', sans-serif;
+}
 
+header h1, form{
+	display: inline;
+	background-color: #403337;
+}
+
+header #form{
+	display: inline-block;
+}
+h1 img{
+	width: 20%;
+}
+
+#wrapper{
+	color: white;
+	background-color: blue;
+}
