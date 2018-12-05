@@ -1,20 +1,44 @@
 body{
-	margin-left: 2em;
 	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #F5F5F6;
 }
 
-header h1, form{
-	display: inline;
-	background-color: #403337;
-}
-
-header #form{
-	display: inline-block;
-}
 h1 img{
-	width: 20%;
+	width: 70px;
 }
-#wrapper{
-	color: white;
-	background-color: blue;
+/* BREAKPOINT 1*/
+@media (min-width: 30em){
+	body{
+		background-color: #F5F5F6; 
+		max-width: 40em;
+		margin: 0 auto;
+	}
+	h1{
+		display: inline;
+	}
+
+	header{
+		background-color: white;
+	}
+	h1 img{
+		max-width: 10em;
+	}
+	h2{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-color: red;
+	}
+
+	article{
+    	display:flex;
+    	flex-direction:column;
+   		background-color: #fff;
+    	box-shadow: 1px 1px 18px gray;
+    	padding-left: 15px;
+    	padding-right: 15px;
+	}
 }
+
+/* BREAKPOINT 2*/
+@media (min-width: )
