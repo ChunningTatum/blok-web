@@ -1,0 +1,74 @@
+body{
+<<<<<<< HEAD
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #F5F5F6;
+}
+
+h1 img{
+	width: 70px;
+}
+/* BREAKPOINT 1*/
+@media (min-width: 30em){
+	body{
+		background-color: #F5F5F6; 
+		max-width: 40em;
+		margin: 0 auto;
+	}
+	h1{
+		display: inline;
+	}
+
+	header{
+		background-color: white;
+	}
+	h1 img{
+		max-width: 10em;
+	}
+	h2{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-color: red;
+	}
+
+	article{
+    	display:flex;
+    	flex-direction:column;
+   		background-color: #fff;
+    	box-shadow: 1px 1px 18px gray;
+    	padding-left: 15px;
+    	padding-right: 15px;
+	}
+}
+
+/* BREAKPOINT 2*/
+@media (min-width: )
+=======
+	background-color: #F5F5F6; 
+}
+header{
+	display: inline;
+}
+section{
+	background-color: white;
+}
+h1 img{
+	width: 50px;
+}
+section button{
+	display: center;
+	width: 45%;
+	background-color: #F5F5F6;
+	border:none;
+	padding: 15px 32px;
+	text-align: center;
+	text-align: inline;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+	margin: 4px 2px;
+	color: #0E447E;
+}
+a{
+	display: block;
+}
