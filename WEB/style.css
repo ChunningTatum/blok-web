@@ -22,14 +22,20 @@ h1 img{
 	}	
 	header{
 		background-color: white;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
 	}
 	h2{
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		border-color: red;
+		background: url(wallpaper1.jpg);
+		padding-top: 75px;
+		padding-bottom: 75px;
+		color: white;
 	}
-
 	h3{
 		display: flex;
 		justify-content: center;
@@ -45,6 +51,15 @@ h1 img{
     	padding-right: 15px;
     	margin-left: 15px;
     	margin-right: 15px;
+	}
+	form button{
+		width: 50px;
+		padding: 10px;
+		background-color: red;
+		color: white;
+		cursor: pointer;
+		margin-top: 2em;
+		margin-right: 12px;
 	}
 }
 
