@@ -2,12 +2,14 @@ body{
 	font-family: 'Source Sans Pro', sans-serif;
 	background-color: #F5F5F6;
 }
-
+a{
+	display: block;
+}
 h1 img{
-	width: 70px;
+	width: 50px;
 }
 /* BREAKPOINT 1*/
-@media (min-width: 30em){
+@media (min-width: 20em){
 	body{
 		background-color: #F5F5F6; 
 		max-width: 40em;
@@ -42,7 +44,9 @@ h1 img{
 
 /* BREAKPOINT 2*/
 @media (min-width: 70em){
-	background-color: #F5F5F6;
+	body{
+	background-color: gold;
+	max-width: 100%;
 }
 header{
 	display: inline;
@@ -50,9 +54,7 @@ header{
 section{
 	background-color: white;
 }
-h1 img{
-	width: 50px;
-}
+
 section button{
 	display: center;
 	width: 45%;
@@ -67,6 +69,5 @@ section button{
 	margin: 4px 2px;
 	color: #0E447E;
 }
-a{
-	display: block;
+
 }
