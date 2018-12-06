@@ -1,9 +1,6 @@
 body{
 	font-family: 'Source Sans Pro', sans-serif;
 }
-a{
-	display: block;
-}
 h1 img{
 	width: 50px;
 }
@@ -15,7 +12,7 @@ h1 img{
 		margin: 0 auto;
 	}
 	h1{
-		display: inline;
+		align-content: center;
 	}
 	h1 img{
 		max-width: 10em;
@@ -29,7 +26,6 @@ h1 img{
 		align-items: center;
 		border-color: red;
 	}
-
 	h3{
 		display: flex;
 		justify-content: center;
@@ -37,14 +33,40 @@ h1 img{
 		border-color: red;
 	}
 	article{
-    	display:flex;
-    	flex-direction:column;
    		background-color: #fff;
     	box-shadow: 1px 1px 18px gray;
     	padding-left: 15px;
     	padding-right: 15px;
     	margin-left: 15px;
     	margin-right: 15px;
+    	max-width: 400px;
+    	display:flex;
+    	flex-direction:column;
+    	justify-content: center;
+	}
+	main{
+		align-content: center;
+	}
+	main button{
+		background-color: #F5F5F6;
+		border:none;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 16px;
+		margin: 4px 2px;
+		color: #0E447E;
+		max-width: 20em;
+		display: flex;
+	}
+
+	form {
+
+	}
+	a{
+		display: flex;
+		flex-direction: column;
 	}
 }
 
@@ -62,13 +84,11 @@ h1 img{
 	}
 
 	section button{
-		display: center;
 		width: 45%;
 		background-color: #F5F5F6;
 		border:none;
 		padding: 15px 32px;
 		text-align: center;
-		text-align: inline;
 		text-decoration: none;
 		font-weight: bold;
 		font-size: 16px;
