@@ -6,16 +6,45 @@ body{
 /* BREAKPOINT 1*/
 @media (min-width: 20em){
     header{
-        background-image: url("bg-1.jpg");
         color: white;
+        background-color: white;
     }
-    header img{
-        width: 50px;
+    .img-container{
+    	background-image: url("bg-1.jpg");
+    	background-repeat: no-repeat;
+    	background-size: 100%;
+    	padding: 12%;
+    	display: flex;
+    	justify-content: center;
     }
-    header h1{
-        background-color: rgba(0,0,0,.2);
+    ul{
+    	margin: 0;
+    	padding: 5px 0px;
+    	display: flex;
+    	justify-content: flex-end;
+    	background-color: white;
+    }
+    ul button{
+    	color: white;
+    	background-color: red;
+    	border: none;
+    	border-radius: 100%;
+    	width: 38px;
+    	height: 40px;
+    }
+    ul img{
+    	width: 16px;
+    }
+    form{
+    	position: absolute;
+    }
+    h1{
+        background-color: rgba(0,0,0,.5);
         font-size: 24px;
-        margin: 50px 30px;
+        align-self: flex-end;
+        color: white;
+        padding: 15px;
+        text-align: center; 
     }
     main{
         margin-left: 15px;
@@ -23,6 +52,9 @@ body{
     }
     section{
         background-color: white;
+        -webkit-box-shadow: 6px 10px 52px -22px rgba(0,0,0,1);
+		-moz-box-shadow: 6px 10px 52px -22px rgba(0,0,0,1);
+		box-shadow: 6px 10px 52px -22px rgba(0,0,0,1);
     }
 
     main button{
@@ -34,6 +66,7 @@ body{
         font-size: 16px;
         cursor: pointer;
         text-decoration: none;
+        font-weight: bold;
     }
     article{
         margin-left: 15px;
@@ -44,9 +77,17 @@ body{
         border-bottom: 3px solid red;
         padding-bottom: 10px;
     }
+}
+/* BREAKPOINT 2*/
+@media (min-width: 48em){
+	.img-container{
+		padding: 13%; 
+	}
+}
 
-
-/ BREAKPOINT 2*/
-@media (min-width: 70em){
-
+/* BREAKPOINT 3*/
+@media (min-width: 87em){
+	.img-container{
+		padding: 14%; 
+	}
 }
