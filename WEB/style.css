@@ -1,23 +1,15 @@
 *{
   box-sizing: border-box;
 }
-
+/* positioning content */
 body {
   margin: 0em;
   background-color: #f5f5f6;
   font-family: 'Source Sans Pro', sans-serif;
-  color: white;
+  color: black;
 }
 
-li{
-  list-style: none;
-}
-
-h1{
-  margin-left: 1em;
-  text-align: center;
-}
-
+/* header */
 header{
   display: flex;
   align-items: baseline;
@@ -28,38 +20,66 @@ header{
 ul{
   display: flex;
   justify-content: space-between;
-
 }
 
 li{
+  list-style: none;
   margin-right: 2em;
   text-align: center;
 }
 
-img{
-  width: 50%;
+h1{
+  margin-left: 1em;
+  text-align: center;
 }
 
+footer{
+  margin: .4em;
+}
+
+/* main content */
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+h2{
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: .5em;
+  background-color: white;
+  width: 85%;
+  margin-bottom: 3em;
+}
+
+div{
+
+}
+
+img{
+  max-width: 100%;
+}
+
+
 /* Breakpoint 1 */
-@media (max-width: 50em) {
-
-  h1{
-    margin-left: 1em;
-  }
-
-  li{
-    margin-right: 2.5em;
-  }
-
-  article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0em, 1em, 0em, 1em;
-  }
-
-  img{
-    width: 80%;
+@media (min-width: 40em) {
+  body{
+    background-color: red;
   }
 
 }
