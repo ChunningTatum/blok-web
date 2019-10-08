@@ -77,15 +77,25 @@ main {
   animation: fadeout 2s;
 }
 
+h2 {
+  width: 100%;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+h2::nth-child(1) {
+  margin-top: 1em;
+}
+
 article:hover a > img {
   opacity: .25;
 }
 
-article:hover h2{
+article:hover h3{
   opacity: 1;
 }
 
-h2 {
+h3 {
   position: absolute;
   opacity: 0;
   background-color: white;
@@ -93,7 +103,7 @@ h2 {
   font-size: 2em;
 }
 
-h2:hover {
+h3:hover {
   opacity: 1;
 }
 
@@ -369,6 +379,7 @@ form button img{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 2em;
   }
 
   article {
