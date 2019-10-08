@@ -13,10 +13,9 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
+// When clicked on the outside of the modal, close the modal
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
-
-console.log(1+1);

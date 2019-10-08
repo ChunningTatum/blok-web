@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" <head>
-<meta charset="utf-8">
-<title>About me</title>
-<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="style.css">
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>About me</title>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -11,20 +14,20 @@
     <h1> <a href="Index.html">Chun Hui Xiao</a></h1>
     <nav>
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About me</a></li>
         <li><a href="myworks.html">My works</a></li>
-        <li><a href="cv.html">CV</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2></h2>
-      <article>
-        <p>Hi, nice to meet you, my name is <strong>Chun</strong> and I am a <strong>Communication Multimedia (CMD) student</strong> at Hogeschool van Amsterdam (HvA)</p>
+    <section class="about-sec">
+      <article class="about-art">
+        <img class="about-pic" src="img/img2.png" alt="">
+        <p>Hi, nice to meet you, my name is <strong>Chun</strong> and I am a <strong>Communication Multimedia (CMD) student</strong> at Hogeschool van Amsterdam (HvA). In my free time I like to play <strong>games</strong> or do
+          <strong>sports</strong>. Mostly doing <strong>Front-end</strong> but als interested in photography, film making and art.</p>
       </article>
-
     </section>
 
     <footer>
@@ -39,27 +42,14 @@
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <h3>Hi nice to meet you!</h3>
-
-        <form action="index.html" method="post">
-          <ul class="modal-ul">
-            <li>
-              <label>Name</label>
-              <input type="text" name="name" placeholder="Enter your first name here">
-            </li>
-            <li>
-              <label>Last name</label>
-              <input type="text" name="lastName" placeholder="Enter your last name here">
-            </li>
-            <li>
-              <label>E-mail</label>
-              <input type="email" name="email" placeholder="e.g. chun@hotmail.com">
-            </li>
-          </ul>
-        </form>
-
+        <fieldset>
+          <h3>Hi nice to meet you!</h3>
+          <label>Name <input type="text" id="name" name="firstname" placeholder="Your name"></label>
+          <label>Last Name <input type="text" id="lastName" name="lastname" placeholder="Your last name"></label>
+          <label>E-mail <input type="text" name="email" placeholder="e.g chun@hotmail.com"></label>
+          <!-- <button type="button" name="button">Submit</button> -->
+        </fieldset>
       </div>
-    </div>
 
   </main>
   <script src="script.js"></script>
