@@ -14,9 +14,9 @@
     <h1> <a href="Index.html">Chun Hui Xiao</a></h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="Index.html">Home</a></li>
         <li><a href="about.html">About me</a></li>
-        <li><a href="myworks.html">My works</a></li>
+        <li><a href="mywork.html">My work</a></li>
       </ul>
     </nav>
   </header>
@@ -25,8 +25,8 @@
     <section class="about-sec">
       <article class="about-art">
         <img class="about-pic" src="img/img2.png" alt="">
-        <p>Hi, nice to meet you, my name is <strong>Chun</strong> and I am a <strong>Communication Multimedia (CMD) student</strong> at Hogeschool van Amsterdam (HvA). In my free time I like to play <strong>games</strong> or do
-          <strong>sports</strong>. Mostly doing <strong>Front-end</strong> but als interested in photography, film making and art.</p>
+        <p>Hi, nice to meet you! My name is <strong>Chun</strong> and I am a <strong>Communication Multimedia Design (CMD) student</strong> at Hogeschool van Amsterdam (HvA). In my free time, I like to play <strong>games</strong> or do
+          <strong>sports</strong>. Mostly doing <strong>Front-end</strong> but, also interested in photography, film making and art.</p>
       </article>
     </section>
 
@@ -42,13 +42,22 @@
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <fieldset>
-          <h3>Hi nice to meet you!</h3>
-          <label>Name <input type="text" id="name" name="firstname" placeholder="Your name"></label>
-          <label>Last Name <input type="text" id="lastName" name="lastname" placeholder="Your last name"></label>
-          <label>E-mail <input type="text" name="email" placeholder="e.g chun@hotmail.com"></label>
-          <!-- <button type="button" name="button">Submit</button> -->
-        </fieldset>
+        <div class="modal-form-wrapper">
+          <fieldset>
+            <h3>Hi nice to meet you!</h3>
+            <label>Name:
+              <input type="text" required id="name" name="firstname" placeholder="Your name">
+            </label>
+            <label>Last Name:
+              <input type="text" required id="lastName" name="lastname" placeholder="Your last name">
+            </label>
+            <label>E-mail:
+              <input type="text" required name="email" placeholder="e.g chun@hotmail.com">
+            </label>
+            <!-- <button type="button" name="button">Submit</button> -->
+          </fieldset>
+        </div>
+
       </div>
 
   </main>

@@ -98,7 +98,7 @@ article:hover h3{
 h3 {
   position: absolute;
   opacity: 0;
-  background-color: white;
+  background-color: transparent;
   padding: 1em 2em;
   font-size: 2em;
 }
@@ -227,6 +227,14 @@ article p {
   align-items: center;
 }
 
+.modal h3 {
+  position: relative;
+  opacity: 1;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+
 .close {
   color: #aaaaaa;
   font-size: 1.6em;
@@ -242,14 +250,6 @@ article p {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
-
-fieldset{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  border: none;
-  font-size: 1.7em;
 }
 
 input {
@@ -331,6 +331,7 @@ form button img{
   p {
     font-size: 1em;
     max-width: 85%;
+    line-height: 1.4;
   }
 }
 
@@ -405,5 +406,90 @@ form button img{
   footer {
     margin-right: 2em;
   }
+
+  /* --------------------------------------Individual pages */
+  job-sec {
+    width: 50%;
+  }
+
+  job-sec h2 {
+    padding-left: 20;
+  }
+
+  .job-art {
+    width: 50%;
+    display: flex;
+  }
+
+  .job-h3 {
+    position: relative;
+    opacity: 1;
+    padding: 0;
+    background-color: transparent;
+    font-size: 1.5em;
+  }
+
+  .job-sec img {
+    max-width: 50%;
+    margin: 2em;
+  }
+
+  .description {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.6;
+    width: 100%;
+  }
+
+  aside p {
+    width: 100%;
+    margin-bottom: .5em;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  aside {
+    margin-top: 1em;
+  }
+
+  .job-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .job-heading h2 {
+    width: 54%;
+  }
+
+  /* --------------------------------------about page */
+  .modal-form-wrapper{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+  }
+
+  fieldset {
+    border: none;
+    margin-bottom: 3em;
+
+  }
+
+  fieldset label {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  fieldset input {
+    margin-left: 3em;
+    padding: 1em 1.5em;
+  }
+
 
 }
