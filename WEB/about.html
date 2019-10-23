@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header>
+  <header> <!--navigation -->
     <h1> <a href="Index.html">Chun Hui Xiao</a></h1>
     <nav>
       <ul>
@@ -21,29 +21,22 @@
     </nav>
   </header>
 
-  <main>
+  <main> <!--content -->
     <section class="about-sec">
       <article class="about-art">
+        <h2>About me</h2>
         <img class="about-pic" src="img/img2.png" alt="">
         <p>Hi, nice to meet you! My name is <strong>Chun</strong> and I am a <strong>Communication Multimedia Design (CMD) student</strong> at Hogeschool van Amsterdam (HvA). In my free time, I like to play <strong>games</strong> or do
           <strong>sports</strong>. Mostly doing <strong>Front-end</strong> but, also interested in photography, film making and art.</p>
       </article>
     </section>
 
-    <footer>
-      <button id="myBtn" type="button" name="button"> Contact</button>
-      <a href="https://www.linkedin.com/in/chun-hui-xiao/"><img src="img/linkedin.png" alt=""></a>
-      <a href="https://github.com/ChunningTatum"><img src="img/github.png" alt=""></a>
-      <a href="https://www.instagram.com/chnhx/"><img src="img/instagram.png" alt=""></a>
-      <a href="https://www.facebook.com/chunhui.xiao.1"><img src="img/facebook.png" alt=""></a>
-    </footer>
-
     <!-- This is the modal for the mail form -->
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
         <div class="modal-form-wrapper">
-          <fieldset>
+          <form>
             <h3>Hi nice to meet you!</h3>
             <label>Name:
               <input type="text" required id="name" name="firstname" placeholder="Your name">
@@ -52,15 +45,24 @@
               <input type="text" required id="lastName" name="lastname" placeholder="Your last name">
             </label>
             <label>E-mail:
-              <input type="text" required name="email" placeholder="e.g chun@hotmail.com">
+              <input type="text" required name="email" placeholder="Youremail@hotmail.com">
             </label>
-            <!-- <button type="button" name="button">Submit</button> -->
-          </fieldset>
+            <label> Message:
+              <input type="text" name="textArea" placeholder="Hi">
+            </label>
+          </form>
         </div>
-
       </div>
-
+    </div>
   </main>
+
+  <footer>
+    <button id="myBtn" type="button" name="button"> Contact</button>
+    <a href="https://www.linkedin.com/in/chun-hui-xiao/" target="_blank"> <img src="img/linkedin.png" alt=""></a>
+    <a href="https://github.com/ChunningTatum" target="_blank"><img src="img/github.png" alt=""></a>
+    <a href="https://www.instagram.com/chnhx/" target="_blank"><img src="img/instagram.png" alt=""></a>
+    <a href="https://www.facebook.com/chunhui.xiao.1" target="_blank"><img src="img/facebook.png" alt=""></a>
+  </footer>
   <script src="script.js"></script>
 </body>
 
