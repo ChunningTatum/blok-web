@@ -1,4 +1,7 @@
 /* Flexbox gehaald van https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+/* modal gehaald van https://www.w3schools.com/howto/howto_css_modals.asp */
+/* Form vailidation inspiration https://css-tricks.com/form-validation-ux-html-css/ */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,11 +14,6 @@ body {
   background-color: #f5f5f6;
   font-family: 'Source Sans Pro', sans-serif;
   color: black;
-}
-
-canvas {
-  display: block;
-  vertical-align: bottom;
 }
 
 #particle-container {
@@ -261,16 +259,47 @@ article p {
   cursor: pointer;
 }
 
-input {
+form {
+  dis
+  width: 60%;
+  border: none;
+  margin-bottom: 3em;
+}
+
+form label {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form input {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-color: #75eda4;
+  border-color: #000000;
   font-size: .7em;
+  margin-left: 3em;
+  padding: 1em 1.5em;
 }
 
-form button img {
-  width: 1em;
+form input:optional {
+  border-bottom-color: #999;
+}
+
+form input:required:valid{
+  border-bottom-color: palegreen;
+}
+
+form input:invalid {
+  border-bottom-color: salmon;
+}
+
+form button {
+  padding: 0.2em 0.6em;
+  border: 0.08em solid;
+  font-size: 1em;
+  margin-top: 2em;
 }
 
 /* --------------------------------------Breakpoint 1 */
@@ -375,6 +404,27 @@ form button img {
 
   footer {
     margin-right: 4%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  form label{
+    align-items: flex-start;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+  }
+
+  label input {
+    margin-left: 0;
   }
 }
 
@@ -481,30 +531,16 @@ form button img {
   }
 
   /* --------------------------------------about page */
+  form button img {
+    width: 1em;
+  }
+
   .modal-form-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
-  }
-
-  form {
-    width: 60%;
-    border: none;
-    margin-bottom: 3em;
-  }
-
-  form label {
-    margin-top: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  form input {
-    margin-left: 3em;
-    padding: 1em 1.5em;
   }
 
   .about-art h2 {
@@ -540,6 +576,34 @@ form button img {
   }
 
 }
+
+@media (max-width: 68em)
+
+/*1100px*/
+  {
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    form label{
+      align-items: flex-start;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-self: flex-start;
+    }
+
+    label input {
+      margin-left: 0;
+    }
+}
+
+
 
 /* --------------------------------------Animations */
 .trigger_animation_1 {
