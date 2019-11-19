@@ -80,6 +80,10 @@ footer {
   margin: .4em;
 }
 
+.job-sec-2 p:last-of-type {
+  margin-top: 3em;
+}
+
 /* --------------------------------------main content */
 main {
   display: flex;
@@ -461,9 +465,9 @@ form button {
     width: 43%;
   }
 
-  p {
+  .about-art p {
     margin-left: 1em;
-    width: 40%;
+    max-width: 40%;
   }
 
   footer {
@@ -525,9 +529,55 @@ form button {
     align-items: center;
   }
 
+  .job-sec-2 img {
+    margin-bottom: 3em;
+  }
+
   .job-heading h2 {
     width: 54%;
     margin-left: 1.9em;
+  }
+
+  .job-sec-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 60%;
+    margin-left: 20%;
+  }
+
+  .job-sec-2 h4 {
+    align-self: flex-start;
+    font-size: 1.3em;
+    margin-bottom: 2em;
+  }
+
+  .job-sec-2 ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    font-size: 1.2em;
+    margin-bottom: 3em;
+  }
+
+  .job-sec-2 li {
+    list-style-type: circle;
+    margin-top: 0.3em;
+  }
+
+  .job-img-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .content-wrapper-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .p-wrapper {
+    margin-left: 4em;
+    max-width: 100%;
   }
 
   /* --------------------------------------about page */
